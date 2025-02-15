@@ -1,0 +1,119 @@
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    border-radius: 20px;
+    background: rgb(26, 26, 87); /* Dark blue navbar */
+    padding: 10px;
+    margin-top: 1%;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-item {
+    border-radius: 15px;
+    margin-right: 25px;
+    position: relative;
+}
+
+.nav-btn {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: normal;
+}
+
+.active {
+    font-weight: bold;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    border-radius: 15px;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 10px;
+    color: rgb(195, 32, 32);
+    text-decoration: none;
+}
+
+.dropdown-item:hover {
+    background-color: rgb(12, 207, 233);
+}
+
+/* Apply Now button specific styling */
+.apply-btn {
+    background-color: rgb(255, 221, 51); /* Yellow color */
+    color: rgb(0, 0, 0); /* Dark text color */
+    border-radius: 40px;
+    padding: 8px;
+    width: 120px; /* Adjusted to fit text */
+    text-align: center;
+}
+
+/* Call Us button specific styling */
+.call-btn {
+    background-color: rgb(255, 221, 51); /* Yellow color */
+    color: rgb(0, 0, 0); /* Dark text color */
+    border-radius: 20px;
+    padding: 8px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* Video call button specific styling */
+.video-btn {
+    background-color: rgb(255, 221, 51); /* Yellow color */
+    color: rgb(0, 0, 0); /* Dark text color */
+    border-radius: 20px;
+    padding: 8px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.student-btn {
+    background-color: rgb(0, 0, 255); /* Blue color */
+    color: white;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 10px;
+    width: 140px;
+    text-align: center;
+}
+
+.student-btn:hover {
+    background-color: rgb(220, 220, 232);
+}
+
+/* Ensuring nav buttons are white */
+.nav-btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(42, 42, 93);
+}
