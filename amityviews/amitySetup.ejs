@@ -1,0 +1,59 @@
+<%- include('./layouts/header.ejs') %>
+
+<div class="container">
+    <div class="form-box" style="border: 2px solid #7ccd59; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 500px; margin: 0 auto; background-color: #ffeb3b;">
+        <!-- Add the header inside the form-box for proper alignment -->
+        <h1 align="center" id="form-header" style="color: #1732cb;">Registration Form Amity University</h1>
+        
+        <form action="" method="post" enctype="multipart/form-data" style="display: flex; flex-direction: column; align-items: center;">
+            <div class="row mb-3" style="width: 100%;">
+                <div class="col-sm-12">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" id="name" placeholder="Enter Name" name="Name" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                </div>
+            </div>
+            <div class="row mb-3" style="width: 100%;">
+                <div class="col-sm-12">
+                    <label for="fathername" class="form-label">Father Name:</label>
+                    <input type="text" id="fathername" placeholder="Father Name" name="Fathername" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                </div>
+            </div>
+            <div class="row mb-3" style="width: 100%;">
+                <div class="col-sm-12">
+                    <label for="phonenumber" class="form-label">Phone Number:</label>
+                    <input type="text" id="phonenumber" placeholder="Enter Phone Number" name="Phonenumber" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                </div>
+            </div>
+            <div class="row mb-3" style="width: 100%;">
+                <div class="col-sm-12">
+                    <label for="email" class="form-label">Email-Id:</label>
+                    <input type="email" id="email" placeholder="Enter Email-Id" name="email" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                </div>
+            </div>
+            <div class="row mb-3" style="width: 100%;">
+                <div class="col-sm-12">
+                    <label for="birthday" class="form-label">Birthday:</label>
+                    <input type="date" id="birth" placeholder="Birth Date" name="Birthday" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                </div>
+            </div>
+            <div class="row mb-3" style="width: 100%;">
+                <div class="col-sm-12">
+                    <label for="password" class="form-label">password:</label>
+                    <input type="password" id="password" placeholder="password" name="password" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                </div>
+            </div>
+            <div class="row mb-3" style="width: 100%;">
+                <div class="col-sm-12">
+                    <input type="submit" class="btn btn-primary" value="Submit" style="padding: 10px 20px; border-radius: 5px; background-color: #241dd5; border: none; cursor: pointer;">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<% if (typeof message !== 'undefined') { %>
+    <p style="color: rgb(166, 203, 78); text-align: center;"><%- message %></p>
+<% } %>
+
+<%- include('./layouts/footer.ejs') %>
+

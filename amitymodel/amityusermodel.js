@@ -1,25 +1,25 @@
 const mongoose = require('mongoose');
 
-const amityusermodel = mongoose.Schema({
+const amityusermodel = new mongoose.Schema({
     name:{
         type: String,
-        require: true
+        required: true
     },
-    email:{
+    Birthday:{
         type: String,
-        require: true
+        required: true
     },
     password:{
         type: String,
-        require: true
+        required: true
     },
-    is_admin:{
-        type :String,
-        require: true
+    Phonenumber:{
+        type : String,
+        required: true
     },
     token:{
         type: String,
-        require: true
+        required: true
     }
 });
 

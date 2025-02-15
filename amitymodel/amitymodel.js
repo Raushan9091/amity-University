@@ -1,18 +1,18 @@
 const mongoose = require('mongoose');
 
-const amityblogmodel = mongoose.Schema({
+const amityblogmodel = new mongoose.Schema({
 
-    amitymodel_titles:{
+    amitymodel_name:{
         type: String,
-        require: true
+        required: true
     },
-    amitymodel_description:{
+    amitymodel_Fathername:{
         type: String,
-        require: true
+        required: true
     },
-    amitymodel_logo:{
+    amitymodel_email:{
         type: String,
-        require: true
+        required: true
     }
 
 });
